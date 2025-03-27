@@ -1,0 +1,1 @@
+import { z } from "zod"; export const GeneratePromptSchema = z.object({ prompt: z.string().min(1, { message: "Prompt cannot be empty" }).max(1000, { message: "Prompt too long, maximum 1000 characters" }) });

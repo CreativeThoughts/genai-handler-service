@@ -1,0 +1,1 @@
+import request from "supertest"; import { createApp } from "../../app"; describe("Health Endpoint", () => { const app = createApp(); it("should return health status", async () => { const response = await request(app).get("/health"); expect(response.status).toBe(200); expect(response.body.status).toBe("OK"); expect(response.body).toHaveProperty("timestamp"); }); });
