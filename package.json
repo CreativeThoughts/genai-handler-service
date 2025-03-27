@@ -11,7 +11,8 @@
     "docker:run": "docker run -p 3000:3000 genai-handler-api",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "prod": "cross-env NODE_ENV=production node dist/index.js"
+    "prod": "cross-env NODE_ENV=production node dist/index.js",
+    "test:logger": "ts-node scripts/testLogger.ts"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "express": "^4.21.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2",
+    "winston": "^3.17.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
